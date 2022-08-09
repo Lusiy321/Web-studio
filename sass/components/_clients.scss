@@ -1,0 +1,51 @@
+.icon-company {
+    fill: var(--social-background);
+}
+
+.company-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.company-icons__item {
+    width: 170px;
+    height: 92px;
+}
+
+.company-link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: 1px solid var(--social-background);
+    border-radius: 4px;
+    transition-property: color, background-color, box-shadow, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+    color: var(--main-hover-color);
+    border-color: var(--main-hover-color);
+    transition-property: color, background-color, box-shadow, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+    &:focus .icon-company,
+    &:hover .icon-company {
+    fill: var(--main-hover-color);
+    transition-property: color, background-color, box-shadow, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.icon-company {
+    transition-property: color, background-color, box-shadow, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,1751 @@
+:root {
+  --main-bg-color: #ffff;
+  --main-text-color: #212121;
+  --main-hover-color: #2196f3;
+  --contacts-color: #757575;
+  --second-bg-color: #f5f4fa;
+  --border-line-header: #ececec;
+  --content-bg-color: #2f303a;
+  --border-block-color: #eeeeee;
+  --social-background: #afb1b8;
+}
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0;
+  /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+body {
+  margin: auto;
+  font-family: "Roboto", Arial, sans-serif;
+  border: 1px solid var(--border-block-color);
+  color: var(--main-text-color);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.u-vh {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+header {
+  border-bottom: 2px solid var(--border-line-header);
+  width: auto;
+}
+
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo__link {
+  display: block;
+  color: var(--main-text-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo__text {
+  color: var(--main-hover-color);
+}
+
+.navigation-title,
+.contacts__title {
+  gap: 50px;
+}
+
+.navigation {
+  margin-left: 10%;
+}
+
+.navigation__list {
+  position: relative;
+}
+
+.navigation__link {
+  color: var(--main-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link:after {
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link:hover:after, .navigation__link:focus:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--main-hover-color);
+  opacity: 1;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link__index {
+  color: var(--main-hover-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link__index:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--main-hover-color);
+  opacity: 1;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link__portfolio {
+  color: var(--main-hover-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link__portfolio:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--main-hover-color);
+  opacity: 1;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts {
+  margin-left: 20%;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__title {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contacts__link {
+  color: var(--contacts-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover .icon__mail, .contacts__link:hover .icon__phone {
+  fill: var(--main-hover-color);
+  color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover, .contacts__link:focus {
+  fill: var(--main-hover-color);
+  color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon__mail,
+.icon__phone {
+  display: inline-block;
+  fill: var(--contacts-color);
+  margin-right: 10px;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-screen {
+  height: 600px;
+  width: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main-screen__title {
+  color: var(--main-bg-color);
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.main-screen__button {
+  color: var(--main-bg-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: var(--main-hover-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid var(--main-hover-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-screen__button:hover, .main-screen__button:focus {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background: var(--second-bg-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid var(--second-bg-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer {
+  background-color: var(--content-bg-color);
+  border: 1px solid var(--border-block-color);
+  padding: 60px 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.f-logo {
+  color: var(--main-bg-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.f-logo span {
+  color: var(--main-hover-color);
+}
+
+address {
+  font-style: normal;
+}
+
+.address {
+  color: var(--main-bg-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.f-contacts {
+  margin-bottom: 9px;
+}
+.f-contacts:last-child {
+  margin-bottom: 0;
+}
+
+.f-contacts__link {
+  text-decoration: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.f-contacts__link:hover, .f-contacts__link:focus {
+  color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social {
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  margin-bottom: 20px;
+}
+
+.socials-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.socials-link-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials-link-icon:hover, .socials-link-icon:focus {
+  background-color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-bg-color);
+}
+
+.telegram-form input {
+  width: 358px;
+  height: 50px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 20px;
+  background-color: var(--content-bg-color);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.footer-button {
+  color: var(--main-bg-color);
+  width: 200px;
+  height: 50px;
+  outline: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-left: 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: var(--main-hover-color);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid var(--main-hover-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button:hover, .footer-button:focus {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: start;
+  background: var(--second-bg-color);
+  border-radius: 4px;
+  border: 1px solid var(--second-bg-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button:hover .icon-send, .footer-button:focus .icon-send {
+  fill: var(--main-text-color);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-send {
+  fill: var(--main-bg-color);
+  width: 24px;
+  height: 24px;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prodjects {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.boxes {
+  padding: 20px 24px;
+  border: 1px solid var(--border-block-color);
+  border-top: none;
+}
+
+.prodjects__item {
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.prodjects__item:hover, .prodjects__item:focus {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  -webkit-transition-property: color, background-color, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: color, background-color, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: color, background-color, box-shadow, opacity, transform;
+  transition-property: color, background-color, box-shadow, opacity, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+.prodjects__item:hover .overlay-list, .prodjects__item:focus .overlay-list {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition-property: color, background-color, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: color, background-color, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: color, background-color, box-shadow, opacity, transform;
+  transition-property: color, background-color, box-shadow, opacity, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.boxes__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.boxes__text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--contacts-color);
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition-property: color, background-color, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: color, background-color, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: color, background-color, box-shadow, opacity, transform;
+  transition-property: color, background-color, box-shadow, opacity, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--main-bg-color);
+  padding: 24px;
+}
+
+.competension {
+  padding-bottom: 0;
+}
+
+.competension__item {
+  width: 270px;
+}
+
+.competension__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.competension__text {
+  color: var(--contacts-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.competension__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--second-bg-color);
+  border: 1px solid var(--second-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.about-text-box {
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: relative;
+  bottom: 70px;
+}
+
+.about-text-box__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14x;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  padding-top: 27px;
+}
+
+.team {
+  background-color: var(--second-bg-color);
+}
+
+.boxes-team {
+  padding: 30px;
+}
+
+.main-title-2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team-man {
+  background-color: var(--main-bg-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.boxes-team_title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+}
+
+.boxes-team__text {
+  color: var(--contacts-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials-link:hover, .socials-link:focus {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-hover-color);
+  fill: var(--main-bg-color);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials-link:focus svg.socials-icon, .socials-link:hover svg.socials-icon {
+  fill: var(--main-bg-color);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-background);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-company {
+  fill: var(--social-background);
+}
+
+.company-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.company-icons__item {
+  width: 170px;
+  height: 92px;
+}
+
+.company-link {
+  width: 170px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: 1px solid var(--social-background);
+  border-radius: 4px;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.company-link:focus, .company-link:hover {
+  color: var(--main-hover-color);
+  border-color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.company-link:focus .icon-company, .company-link:hover .icon-company {
+  fill: var(--main-hover-color);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-company {
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+  min-height: 100%;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-property: opacity, background-color, visibility, -webkit-box-shadow;
+  transition-property: opacity, background-color, visibility, -webkit-box-shadow;
+  transition-property: opacity, background-color, box-shadow, visibility;
+  transition-property: opacity, background-color, box-shadow, visibility, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  pointer-events: all;
+  -webkit-transition-property: opacity, background-color, visibility, -webkit-box-shadow;
+  transition-property: opacity, background-color, visibility, -webkit-box-shadow;
+  transition-property: opacity, background-color, box-shadow, visibility;
+  transition-property: opacity, background-color, box-shadow, visibility, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: var(--main-bg-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  -webkit-transition-property: opacity, background-color, fill, visibility, border-color;
+  transition-property: opacity, background-color, fill, visibility, border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover, .modal-btn:focus {
+  border-color: var(--main-hover-color);
+  -webkit-transition-property: opacity, background-color, fill, visibility, border-color;
+  transition-property: opacity, background-color, fill, visibility, border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover .modal-icon, .modal-btn:focus .modal-icon {
+  fill: var(--main-hover-color);
+  -webkit-transition-property: opacity, background-color, fill, visibility;
+  transition-property: opacity, background-color, fill, visibility;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button {
+  color: var(--main-bg-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: var(--main-hover-color);
+  border-radius: 4px;
+  padding: 10px 52px;
+  margin-top: 30px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid var(--main-hover-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover, .modal-button:focus {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background: var(--second-bg-color);
+  border-radius: 4px;
+  padding: 10px 52px;
+  border: 1px solid var(--second-bg-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-stroke {
+  margin-left: 40px;
+  position: relative;
+}
+
+.modal-text {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--contacts-color);
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+div.modal strong {
+  display: block;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-top: 40px;
+}
+
+.input-register-form {
+  width: 448px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  cursor: pointer;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+div.modal textarea {
+  width: 448px;
+  height: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  -webkit-transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill, border-color;
+  transition-property: color, background-color, box-shadow, fill, border-color, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+svg.form-icon {
+  fill: var(--main-text-color);
+  -webkit-transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill, border-color;
+  transition-property: color, background-color, box-shadow, fill, border-color, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-register-label {
+  -webkit-transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill, border-color;
+  transition-property: color, background-color, box-shadow, fill, border-color, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-register-label:hover .form-icon, .input-register-label:focus-within .form-icon {
+  fill: var(--main-hover-color);
+  border-color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill, border-color;
+  transition-property: color, background-color, box-shadow, fill, border-color, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-register-form {
+  outline: none;
+}
+.input-register-form:hover, .input-register-form:focus-within {
+  border-color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill, border-color;
+  transition-property: color, background-color, box-shadow, fill, border-color, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal textarea {
+  outline: none;
+}
+.modal textarea:hover, .modal textarea:focus-within {
+  border-color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill, border-color;
+  transition-property: color, background-color, box-shadow, fill, border-color, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-label {
+  text-align: center;
+}
+
+.check-label span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contacts-color);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+}
+
+.check-label span a {
+  color: var(--main-hover-color);
+}
+
+.checkbox {
+  width: 16px;
+  height: 15px;
+}
+
+.modal-input {
+  display: block;
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  fill: var(--main-text-color);
+}
+
+.check-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+}
+.check-label:hover {
+  fill: var(--main-hover-color);
+}
+
+.checkbox-form:checked + svg.check-icon .check-svg-check {
+  opacity: 0;
+}
+
+.check-svg-check {
+  opacity: 0;
+}
+
+.checkbox-form:checked + svg.check-icon .check-svg-check {
+  opacity: 1;
+  fill: var(--main-bg-color);
+}
+
+.checkbox-form:checked + svg.check-icon .check-svg-uncheck {
+  fill: var(--main-hover-color);
+}
+
+.checkbox-form:checked + svg.check-icon {
+  background: var(--main-hover-color);
+}
+
+.checkbox-form:focus + svg.check-icon {
+  fill: var(--main-hover-color);
+}
+
+.send-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-button__btn {
+  color: var(--main-text-color);
+  margin-right: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background: var(--second-bg-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid var(--second-bg-color);
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-button__btn:hover, .nav-button__btn:focus {
+  color: var(--main-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background: var(--main-hover-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 1px solid var(--main-hover-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}/*# sourceMappingURL=main.css.map */
