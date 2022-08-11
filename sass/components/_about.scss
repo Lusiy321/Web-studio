@@ -1,3 +1,9 @@
+.about{
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
 .about-title {
     font-weight: 700;
     font-size: 36px;

@@ -24,6 +24,17 @@
           Studio
         </a>
       </div>
+      <!-- Mobile MENU -->
+      <button type="button" class="mobile__btn">
+        <svg class="icon__mobile" width="24" height="16">
+          <use href="images/sprite.svg#icon-mobile"></use>
+        </svg>
+      </button>
+      <div class="mobile__menu">
+        <div class="mobile__overlay">
+
+        </div>
+      </div>
       <!-- MAIN MENU -->
       <nav class="navigation">
         <ul class="navigation-title">
@@ -34,14 +45,14 @@
       </nav>
       <div class="contacts">
         <ul class="contacts__title">
-          <li>
+          <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="icon__mail" width="16px"
                 height="12px">
                 <use href="images/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a>
           </li>
-          <li>
+          <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
               <svg class="icon__phone" width="10px" height="16px">
                 <use href="images/sprite.svg#icon-phone"></use>
@@ -75,11 +86,7 @@
             </div>
             <h3 class="competension__header">Внимание к деталям</h3>
             <p class="competension__text">
-              Идейные соображения, а также
-              <br />
-              начало повседневной работы по
-              <br />
-              формированию позиции.
+              Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
           <li class="competension__item">
@@ -165,7 +172,7 @@
     <section class="section team">
       <div class="container">
         <h2 class="main-title-2">Наша команда</h2>
-        <ul>
+        <ul class="team_block">
           <li class="team-man">
             <img src="images/team-1.jpg" alt="Дизайнер" width="270" height="260" />
             <div class="boxes-team">
@@ -316,7 +323,7 @@
       </div>
     </section>
     <!-- CLIENTS -->
-    <section class="section">
+    <!-- <section class="section">
       <div class="container">
         <h2 class="main-title-2">Постоянные киенты</h2>
         <ul class="company-icons">
@@ -364,10 +371,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
   <!-- FOOTER -->
-  <footer>
+  <!-- <footer>
     <div class="container footer">
       <div class="footer-contacts">
         <p class="f-logotype">
@@ -432,7 +439,7 @@
           </button>
         </form>
       </div>
-  </footer>
+  </footer> -->
   <!-- MODAL WINDOW -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">

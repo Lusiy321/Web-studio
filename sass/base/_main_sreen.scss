@@ -1,4 +1,30 @@
 .main-screen {
+    
+    @media screen and (min-width: 100px) {
+            height: 400px;
+            width: auto;
+            padding-top: 118px;
+            padding-bottom: 188px;
+            background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            align-items: center;
+            text-align: center;
+    }
+    
+    @media screen and (min-width: 768px) {
+        height: 400px;
+        width: auto;
+        padding-top: 118px;
+        padding-bottom: 188px;
+        background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 1200px) {
     height: 600px;
     width: auto;
     padding-top: 200px;
@@ -8,9 +34,30 @@
     background-position: center center;
     align-items: center;
     text-align: center;
+    }
 }
 
 .main-screen__title {
+    @media screen and (min-width: 100px) {
+        color: var(--main-bg-color);
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;}
+    
+    @media screen and (min-width: 768px) {
+        color: var(--main-bg-color);
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    
+    @media screen and (min-width: 1200px) {
     color: var(--main-bg-color);
     margin-bottom: 30px;
     font-weight: 900;
@@ -18,6 +65,7 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
 }
 
 .main-screen__button {
