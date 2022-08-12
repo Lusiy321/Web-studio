@@ -24,6 +24,35 @@
           Studio
         </a>
       </div>
+      <!-- Mobile MENU -->
+      <button type="button" class="mobile__btn" data-menu-open>
+        <svg class="icon__mobile" width="24" height="16">
+          <use href="images/sprite.svg#icon-mobile"></use>
+        </svg>
+      </button>
+      <div class="mobile__menu" data-menu>
+        <button type="button" class="mobile-btn__close" data-menu-close>
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg></button>
+        <div class="mobile__overlay">
+          <ul class="mobile__nav">
+            <li><a class="mobile__nav__link" href="index.html">Студия</a></li>
+            <li><a class="mobile__nav__link" href="portfolio.html">Портфолио</a></li>
+            <li><a class="mobile__nav__link" href="">Контакты</a></li>
+          </ul>
+          <ul class="mobile__contacts">
+            <li><a class="mobile__contacts__link" href="mailto:info@devstudio.com">info@devstudiomobile</a></li>
+            <li><a class="mobile__contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+          <ul class="mobile__social">
+            <li><a class="mobile__social__link" href="http://">Instagram</a></li>
+            <li><a class="mobile__social__link" href="http://">Twitter</a></li>
+            <li><a class="mobile__social__link" href="http://">Facebook</a></li>
+            <li><a class="mobile__social__link" href="http://">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
       <!-- MAIN MENU -->
       <nav class="navigation">
         <ul class="navigation-title">
@@ -34,14 +63,14 @@
       </nav>
       <div class="contacts">
         <ul class="contacts__title">
-          <li>
+          <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="icon__mail" width="16px"
                 height="12px">
                 <use href="images/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a>
           </li>
-          <li>
+          <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
               <svg class="icon__phone" width="10px" height="16px">
                 <use href="images/sprite.svg#icon-phone"></use>
@@ -201,7 +230,7 @@
           </p>
         </address>
       </div>
-      <div>
+      <div class="socials-block">
         <h3 class="footer-social">присоеденяйтесь</h3>
         <ul class="socials-footer">
           <li>
@@ -248,6 +277,7 @@
         </form>
       </div>
   </footer>
+  <script src="./js/mobile_menu.js"></script>
 </body>
 
 </html>

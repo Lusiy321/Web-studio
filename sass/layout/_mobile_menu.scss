@@ -1,9 +1,8 @@
-.mobile__btn {
-    @media screen and (min-width: 100px){
+.mobile__btn {    
         border: none;
-    background-color: var(--main-bg-color);
-    cursor: pointer;
-    }
+        background-color: var(--main-bg-color);
+        cursor: pointer;
+   
     
     @media screen and (min-width: 768px) {
         display: none;
@@ -12,4 +11,86 @@
     @media screen and (min-width: 1200px) {
         display: none;
     }
+}
+.is-open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-btn__close{
+    @media screen and (min-width: 100px) {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        transition-property: opacity, background-color, fill, visibility, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            transition-property: opacity, background-color, fill, visibility, border-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &:hover .modal-icon,
+        &:focus .modal-icon {
+            fill: var(--main-hover-color);
+            transition-property: opacity, background-color, fill, visibility;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        }
+    }
+    
+    @media screen and (min-width: 768px) {display: none;}
+    
+    @media screen and (min-width: 1200px) {display: none;}
+}
+
+.mobile__menu{
+    position: fixed;
+    min-width: 100%;
+    background-color: var(--main-bg-color);    
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 250ms ease 0s;
+    min-height: 100%;
+    transition-property: opacity, background-color, box-shadow, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            display: none;
+        }
+}
+
+.is-open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mobile__nav{
+    flex-direction: column;
+}
+.mobile__contacts{
+    flex-direction: column;
+}
+.mobile__social{
+    justify-content: center;
 }

@@ -13,6 +13,17 @@
     transition-property: color, background-color, box-shadow, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 100px) {
+        width: 450px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 
     &:hover,
     &:focus {
@@ -52,7 +63,20 @@
     position: relative;
     overflow: hidden;
 }
+.overlay img{
+    @media screen and (min-width: 100px) {
+        width: 450px;
+    }
 
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
+
+}
 .overlay-list {
     display: flex;
     align-items: center;

@@ -3,29 +3,70 @@
 }
 
 .company-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 }
 
 .company-icons__item {
-    width: 170px;
-    height: 92px;
+    @media screen and (min-width: 100px) {
+        width: 210px;
+        height: 92px;}
+    
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        height: 92px;}
+    
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+}
+    
 }
 
 .company-link {
-    width: 170px;
-    height: 92px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: none;
-    border: 1px solid var(--social-background);
-    border-radius: 4px;
-    transition-property: color, background-color, box-shadow, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 100px) {
+        width: 210px;
+        height: 92px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: 1px solid var(--social-background);
+        border-radius: 4px;
+        transition-property: color, background-color, box-shadow, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        height: 92px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: 1px solid var(--social-background);
+        border-radius: 4px;
+        transition-property: color, background-color, box-shadow, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: 1px solid var(--social-background);
+        border-radius: 4px;
+        transition-property: color, background-color, box-shadow, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
 
     &:focus,
     &:hover {
