@@ -1327,6 +1327,7 @@ address {
 .overlay {
   position: relative;
   overflow: hidden;
+  opacity: 1;
 }
 
 @media screen and (min-width: 100px) {
@@ -2345,15 +2346,15 @@ svg.form-icon {
 }
 
 .is-open {
-  opacity: 1;
+  opacity: 4;
   visibility: visible;
 }
 
 @media screen and (min-width: 100px) {
   .mobile-btn__close {
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 3%;
+    top: 3%;
     width: 30px;
     height: 30px;
     border: none;
@@ -2439,7 +2440,12 @@ svg.form-icon {
 
 .is-open {
   visibility: visible;
-  opacity: 1;
+  opacity: 2;
+}
+
+.mobile__overlay {
+  margin-top: 48px;
+  margin-left: 40px;
 }
 
 .mobile__nav {
@@ -2447,6 +2453,35 @@ svg.form-icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 274px;
+}
+
+.mobile__nav__item {
+  margin-bottom: 32px;
+}
+
+.mobile__nav__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+.mobile__nav__link:hover, .mobile__nav__link:focus {
+  color: var(--main-hover-color);
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active {
+  color: var(--main-hover-color);
 }
 
 .mobile__contacts {
@@ -2454,12 +2489,59 @@ svg.form-icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.mobile__contacts__item {
+  margin-bottom: 32px;
+}
+
+.mobile__contacts__tel {
+  color: var(--main-hover-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.mobile__contacts__mail {
+  color: var(--contacts-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .mobile__social {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 15%;
+}
+
+.mobile__social__link {
+  color: var(--main-hover-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.mobile__social__item:not(:last-child) .mobile__social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 @media screen and (min-width: 100px) {
