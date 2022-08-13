@@ -294,6 +294,12 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 svg {
@@ -1577,7 +1583,7 @@ address {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 100vw) {
   .team-man {
     width: 450px;
   }
@@ -1593,22 +1599,19 @@ address {
   }
 }
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 100vw) {
   .team-man img {
     width: 450px;
-    height: 460px;
   }
 }
 @media screen and (min-width: 768px) {
   .team-man img {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team-man img {
     width: 270px;
-    height: 260px;
   }
 }
 
@@ -2345,15 +2348,10 @@ svg.form-icon {
   }
 }
 
-.is-open {
-  opacity: 4;
-  visibility: visible;
-}
-
 @media screen and (min-width: 100px) {
   .mobile-btn__close {
     position: absolute;
-    right: 3%;
+    right: 4%;
     top: 3%;
     width: 30px;
     height: 30px;
@@ -2414,7 +2412,6 @@ svg.form-icon {
   top: 0;
   left: 0;
   visibility: hidden;
-  opacity: 0;
   -webkit-transition: all 250ms ease 0s;
   transition: all 250ms ease 0s;
   min-height: 100%;
@@ -2440,7 +2437,6 @@ svg.form-icon {
 
 .is-open {
   visibility: visible;
-  opacity: 2;
 }
 
 .mobile__overlay {
