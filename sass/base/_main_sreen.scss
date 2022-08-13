@@ -1,6 +1,6 @@
 .main-screen {
     
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
             height: 400px;
             width: auto;
             padding-top: 118px;
@@ -38,7 +38,7 @@
 }
 
 .main-screen__title {
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         color: var(--main-bg-color);
         margin-bottom: 30px;
         font-weight: 900;

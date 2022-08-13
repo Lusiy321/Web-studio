@@ -5,7 +5,7 @@ footer {
 }
 
 .footer {
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
@@ -28,7 +28,7 @@ footer {
     
 }
 .footer-contacts{
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
             text-align: center;   
         }
     
@@ -41,7 +41,7 @@ footer {
         }
 }
 .socials-block{
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         text-align: center;
     }
 
@@ -156,7 +156,7 @@ address {
     fill: var(--main-bg-color);
 }
 .telegram-form{
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         text-align: center;
     }
 
@@ -170,7 +170,7 @@ address {
     
 }
 .telegram-form form{
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -192,8 +192,8 @@ address {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     margin-right: 12px;
-    @media screen and (min-width: 100px) {
-        width: 100%;
+    @media screen and (max-width: 767px) {
+        width: 358px;
         margin: 0;
     }
     
@@ -229,7 +229,7 @@ address {
     transition-property: color, background-color, box-shadow, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 100px){
+    @media screen and (max-width: 767px){
         margin-top: 20px;
     }
 

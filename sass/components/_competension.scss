@@ -3,14 +3,14 @@
         padding-bottom: 0;}
 }
 .competension__list{
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         flex-wrap: wrap;
         gap: 30px;
     }    
 }
 
 .competension__item {
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         width: 450px;        
     }
     
@@ -42,7 +42,7 @@
 }
 
 .competension__block {
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         align-items: center;
         justify-content: center;

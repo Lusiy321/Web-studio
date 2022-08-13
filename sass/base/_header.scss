@@ -4,7 +4,7 @@ header {
 }
 
 .header-block {
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         justify-content: end;
         height: 60px;
@@ -12,7 +12,10 @@ header {
     }
     
     @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: end;
         height: 80px;
+        align-items: center
         }
         
     @media screen and (min-width: 1200px) {
@@ -65,7 +68,7 @@ header {
 }
 .navigation {
     
-        @media screen and (min-width: 100px) {
+        @media screen and (max-width: 767px) {
             display: none;
         }
     
@@ -196,7 +199,7 @@ header {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 .contacts {
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
     @media screen and (min-width: 768px) {

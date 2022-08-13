@@ -1,5 +1,5 @@
 .nav-button {
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 767px) {
         flex-wrap: wrap;
         justify-content: flex-start;
         margin-bottom: 40px;
