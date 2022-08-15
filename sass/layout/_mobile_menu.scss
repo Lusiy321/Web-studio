@@ -63,6 +63,7 @@
     background-color: var(--main-bg-color);    
     top: 0;
     left: 0;
+    z-index: 2;
     visibility: hidden;    
     transition: all 250ms ease 0s;
     min-height: 100%;
