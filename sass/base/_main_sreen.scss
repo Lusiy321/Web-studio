@@ -23,7 +23,7 @@
         align-items: center;
         text-align: center;
     }
-
+@media screen and (min-width: 1200px) {
     height: 600px;
     width: auto;
     padding-top: 200px;
@@ -34,7 +34,7 @@
     align-items: center;
     text-align: center;
 }
-
+}
 .main-screen__title {
     @media screen and (max-width: 767px) {
         color: var(--main-bg-color);
