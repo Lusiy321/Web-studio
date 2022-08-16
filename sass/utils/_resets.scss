@@ -1,8 +1,6 @@
 body {
     margin: auto;
     font-family: "Roboto", Arial, sans-serif;
-    border: 1px solid var(--border-block-color);
-    color: var(--main-text-color);
 }
 
 .no-scroll {
@@ -46,7 +44,7 @@ li {
     padding: 0 15px;
 
     @media screen and (max-width: 767px) {
-        max-width: 767px;
+        max-width: 480px;
     }
     @media screen and (min-width: 768px) {
         max-width: 768px;

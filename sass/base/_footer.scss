@@ -18,7 +18,7 @@ footer {
         flex-wrap: wrap;
         gap: 60px;
         justify-content: center;
-        align-items: center;
+        
     }     
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -162,6 +162,7 @@ address {
 
     @media screen and (min-width: 768px) {
         text-align: center;
+                
     }
 
     @media screen and (min-width: 1200px) {
@@ -176,6 +177,14 @@ address {
         justify-content: center;
         align-items: center;
         }
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
     @media screen and (min-width: 1200px) {
         display: block;        
     }
@@ -232,6 +241,9 @@ address {
     @media screen and (max-width: 767px){
         margin-top: 20px;
     }
+    @media screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
 
 &:hover,
 &:focus {

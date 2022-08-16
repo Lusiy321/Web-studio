@@ -96,10 +96,10 @@
 
 .mobile__nav{
     flex-direction: column;
-    margin-bottom: 274px;
+    margin-bottom: 25%;
 }
 .mobile__nav__item{
-    margin-bottom: 32px;
+    margin-bottom: 5%;
 }
 
 .mobile__nav__link {
@@ -125,10 +125,10 @@
 
 .mobile__contacts{
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 10%;
 }
 .mobile__contacts__item{
-    margin-bottom: 32px;
+    margin-bottom: 5%;
 }
 .mobile__contacts__tel{
     color: var(--main-hover-color);
@@ -152,9 +152,8 @@
     text-decoration: none;
 }
 .mobile__social{
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-right: 15%;
+    display: block;
+    max-width: 450px;
 }
 
 .mobile__social__link{
@@ -168,8 +167,11 @@
     text-decoration: none;        
 }
 .mobile__social__item:not(:last-child) .mobile__social__link{
-    display: flex;
-    padding-right: 10px;
+    display: flex;    
+    padding-right: 10px;    
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile__social__item:not(:first-child) .mobile__social__link{
+    padding-left: 10px;
 }
 

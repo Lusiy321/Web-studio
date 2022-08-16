@@ -276,8 +276,6 @@ summary {
 body {
   margin: auto;
   font-family: "Roboto", Arial, sans-serif;
-  border: 1px solid var(--border-block-color);
-  color: var(--main-text-color);
 }
 
 .no-scroll {
@@ -328,7 +326,7 @@ li {
 }
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 767px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -923,9 +921,6 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1135,6 +1130,23 @@ address {
             align-items: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .telegram-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .telegram-form form {
     display: block;
@@ -1208,6 +1220,11 @@ address {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
+  .footer-button {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer-button {
     margin-top: 20px;
   }
@@ -1419,6 +1436,12 @@ address {
     gap: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .competension__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .competension__item {
@@ -1443,6 +1466,11 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .competension__header {
+    text-align: center;
+  }
 }
 
 .competension__text {
@@ -1534,7 +1562,6 @@ address {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   position: relative;
-  bottom: 70px;
 }
 
 .about-text-box__title {
@@ -1573,7 +1600,7 @@ address {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .main-title-2 {
@@ -2467,11 +2494,11 @@ svg.form-icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 274px;
+  margin-bottom: 25%;
 }
 
 .mobile__nav__item {
-  margin-bottom: 32px;
+  margin-bottom: 5%;
 }
 
 .mobile__nav__link {
@@ -2503,11 +2530,11 @@ svg.form-icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 10%;
 }
 
 .mobile__contacts__item {
-  margin-bottom: 32px;
+  margin-bottom: 5%;
 }
 
 .mobile__contacts__tel {
@@ -2533,10 +2560,8 @@ svg.form-icon {
 }
 
 .mobile__social {
-  gap: 10px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: 15%;
+  display: block;
+  max-width: 450px;
 }
 
 .mobile__social__link {
@@ -2558,6 +2583,10 @@ svg.form-icon {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.mobile__social__item:not(:first-child) .mobile__social__link {
+  padding-left: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .nav-button {
     -ms-flex-wrap: wrap;
@@ -2574,7 +2603,7 @@ svg.form-icon {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2582,7 +2611,7 @@ svg.form-icon {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
