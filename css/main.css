@@ -1365,16 +1365,19 @@ address {
 @media screen and (max-width: 767px) {
   .overlay img {
     width: 450px;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .overlay img {
     width: 354px;
+    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay img {
     width: 370px;
+    height: 307.28px;
   }
 }
 
