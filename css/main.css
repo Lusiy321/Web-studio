@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: #ffff;
+  --main-bg-color: #FFFF;
   --main-text-color: #212121;
   --main-hover-color: #2196f3;
   --contacts-color: #757575;
@@ -375,7 +375,10 @@ li {
 
 header {
   border-bottom: 2px solid var(--border-line-header);
-  width: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  background-color: var(--main-bg-color);
 }
 
 @media screen and (max-width: 767px) {
