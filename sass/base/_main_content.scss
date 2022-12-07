@@ -8,7 +8,24 @@
     border: 1px solid var(--border-block-color);
     border-top: none;
 }
+.contacts__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.frame{
+    width: 90%;
+}
 
+.marge{
+    @media screen and (max-width: 767px) {
+            margin-top: 30px;
+        }
+    @media screen and (min-width: 768px) {
+        margin-top: 80px;
+        }
+}
 .prodjects__item {
     transition-property: color, background-color, box-shadow, fill;
     transition-duration: 250ms;

@@ -172,7 +172,7 @@ div.modal strong {
 }
 
 .input-register-form {
-        width: 370px;
+        width: 95%;
         height: 40px;
         box-sizing: border-box;
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -197,8 +197,8 @@ div.modal strong {
     }
 }
 
-div.modal textarea {
-    width: 370px;
+.modal-textarea {
+    width: 95%;
     height: 120px;
     box-sizing: border-box;
     resize: none;
@@ -256,7 +256,7 @@ svg.form-icon {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
-.modal textarea {
+.modal-textarea {
     outline: none;
 
     &:hover,

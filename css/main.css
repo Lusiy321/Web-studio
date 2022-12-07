@@ -1290,6 +1290,37 @@ address {
   border-top: none;
 }
 
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.frame {
+  width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+  .marge {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .marge {
+    margin-top: 80px;
+  }
+}
+
 .prodjects__item {
   -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
   transition-property: color, background-color, fill, -webkit-box-shadow;
@@ -2119,7 +2150,7 @@ div.modal strong {
 }
 
 .input-register-form {
-  width: 370px;
+  width: 95%;
   height: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2157,8 +2188,8 @@ div.modal strong {
   }
 }
 
-div.modal textarea {
-  width: 370px;
+.modal-textarea {
+  width: 95%;
   height: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2177,7 +2208,7 @@ div.modal textarea {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
-  div.modal textarea {
+  .modal-textarea {
     width: 448px;
     height: 120px;
     -webkit-box-sizing: border-box;
@@ -2248,10 +2279,10 @@ svg.form-icon {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal textarea {
+.modal-textarea {
   outline: none;
 }
-.modal textarea:hover, .modal textarea:focus-within {
+.modal-textarea:hover, .modal-textarea:focus-within {
   border-color: var(--main-hover-color);
   -webkit-transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
   transition-property: color, background-color, fill, border-color, -webkit-box-shadow;
